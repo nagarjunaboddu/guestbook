@@ -1,6 +1,8 @@
 package com.galvanize.guestbook.exception;
 
-
+/**
+ * APIException global application exception class.
+ */
 public class APIException extends Exception{
 
     private String errCode;
