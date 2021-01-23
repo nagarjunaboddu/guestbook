@@ -1,5 +1,6 @@
 package com.galvanize.guestbook.controller;
 
+import com.galvanize.guestbook.exception.APIException;
 import com.galvanize.guestbook.model.GuestEntry;
 import com.galvanize.guestbook.service.GuestBookServiceImpl;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -19,7 +20,7 @@ public class GuestBookController {
     }
 
     @PostMapping("/guests")
-    public GuestEntry createGuestEntry(@RequestBody GuestEntry guestEntry){
+    public GuestEntry createGuestEntry(@RequestBody GuestEntry guestEntry) throws APIException {
         return guestBookService.createGuestEntry(guestEntry);
     }
     
