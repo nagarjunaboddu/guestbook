@@ -1,9 +1,16 @@
 package com.galvanize.guestbook.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Entity
 public class GuestEntry {
+    @Id
     private String name;
     private String comment;
+
+    public GuestEntry() {
+    }
 
     public GuestEntry(String name, String comment) {
         this.name = name;
