@@ -2,28 +2,27 @@ package com.galvanize.guestbook.model;
 
 public class GuestBoolError {
 
-    private String errcode;
-    private String errmsg;
+    private String errCode;
+    private String errMsg;
 
-
-    public GuestBoolError(String errcode, String errmsg) {
-        this.errcode = errcode;
-        this.errmsg = errmsg;
+    public GuestBoolError(String errCode, String errMsg) {
+        this.errCode = errCode;
+        this.errMsg = errMsg;
     }
 
-    public String getErrcode() {
-        return errcode;
+    public String getErrCode() {
+        return errCode;
     }
 
-    public void setErrcode(String errcode) {
-        this.errcode = errcode;
+    public void setErrCode(String errCode) {
+        this.errCode = errCode;
     }
 
-    public String getErrmsg() {
-        return errmsg;
+    public String getErrMsg() {
+        return errMsg;
     }
 
-    public void setErrmsg(String errmsg) {
-        this.errmsg = errmsg;
+    public void setErrMsg(String errMsg) {
+        this.errMsg = errMsg;
     }
 }
